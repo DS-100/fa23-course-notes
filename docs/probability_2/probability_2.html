@@ -361,11 +361,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Learning Outcomes
+Important Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.</strong></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learning Outcomes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Explore commonly seen random variables like Bernoulli and Binomial distributions</li>
@@ -433,7 +449,7 @@ Learning Outcomes
 <p>B. <span class="math inline">\(Y_B = \sum_{i=1}^{20} X_i\)</span></p>
 <p>C. <span class="math inline">\(Y_C = 20 * X_1\)</span></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -442,7 +458,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Let <span class="math inline">\(X_1, X_2, ... X_{20}\)</span> be 20 i.i.d Bernoulli(0.5) random variables. Since the <span class="math inline">\(X_i\)</span>’s are independent, <span class="math inline">\(\text{Cov}(X_i, X_j) = 0\)</span> for all pairs <span class="math inline">\(i, j\)</span>. Additionally, Since <span class="math inline">\(X_i\)</span> is Bernoulli(0.5), we know that <span class="math inline">\(\mathbb{E}[X] = p = 0.5\)</span> and <span class="math inline">\(\text{Var}(X) = p(1-p) = 0.25\)</span>. We can calculate the following for each scenario:</p>
 <table class="table">
@@ -529,7 +545,7 @@ Solution
 <p>Applying the CLT allows us to make sense of all of this and resolve this issue. By drawing many samples, we can consider how the sample distribution varies across multiple subsets of the data. This allows us to approximate the properties of the population without the need to survey every single member.</p>
 <p>Given this potential variance, it is also important that we consider the <strong>average value and spread</strong> of all possible sample means, and what this means for how big <span class="math inline">\(n\)</span> should be. For every sample size, the expected value of the sample mean is the population mean: <span class="math display">\[\mathbb{E}[\bar{X}_n] = \mu\]</span>. We call the sample mean an <strong>unbiased estimator</strong> of the population mean and will explore this idea more in the next lecture.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -538,7 +554,7 @@ Data 8 Recap: Square Root Law
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The square root law (<a href="https://inferentialthinking.com/chapters/14/5/Variability_of_the_Sample_Mean.html#the-square-root-law">Data 8</a>) states that if you increase the sample size by a factor, the SD decreases by the square root of the factor. <span class="math display">\[\text{SD}(\bar{X_n}) = \frac{\sigma}{\sqrt{n}}\]</span> The sample mean is more likely to be close to the population mean if we have a larger sample size.</p>
 </div>
@@ -631,7 +647,7 @@ store in list
 
 list of estimates is the bootstrapped sampling distribution of f</code></pre>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -640,7 +656,7 @@ Why must we resample <em>with replacement</em>?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Given an original sample of size <span class="math inline">\(n\)</span>, we want a resample that has the same size <span class="math inline">\(n\)</span> as the original. Sampling <em>without</em> replacement will give us the original sample with shuffled rows. Hence, when we calculate summary statistics like the average, our sample <em>without</em> replacement will always have the same average as the original sample, defeating the purpose of a bootstrap.</p>
 </div>
@@ -970,244 +986,258 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">      - cosmo</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">      - cerulean</span></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">    callout-icon: false</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="false"}</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Outcomes</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Explore commonly seen random variables like Bernoulli and Binomial distributions</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Apply the Central Limit Theorem to approximate parameters of a population</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Use sampled data to model an estimation of and infer the true underlying distribution</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Estimate the true population distribution from a sample using the bootstrapping technique</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>Last time, we introduced the idea of random variables: numerical functions of a sample. Most of our work in the last lecture was done to build a background in probability and statistics. Now that we've established some key ideas, we're in a good place to apply what we've learned to our original goal -- understanding how the randomness of a sample impacts the model design process. </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">  jupytext:</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">    text_representation:</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">      extension: .qmd</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">      format_name: quarto</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">      format_version: '1.0'</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">      jupytext_version: 1.16.1</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">  kernelspec:</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">    display_name: Python 3 (ipykernel)</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">    language: python</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co">    name: python3</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>In this lecture, we will delve more deeply into the idea of fitting a model to a sample. We'll explore how to re-express our modeling process in terms of random variables and use this new understanding to steer model complexity. </span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Random Variables</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>There are several cases of random variables that appear often and have useful properties. Below are the ones we will explore further in this course. The numbers in parentheses are the parameters of a random variable, which are constants. Parameters define a random variable’s shape (i.e., distribution) and its values. For this lecture, we'll focus more heavily on the bolded random variables and their special properties, but you should familiarize yourself with all the ones listed below: </span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Bernoulli(p)**</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Takes on <span class="kw">&lt;u&gt;</span>value 1 with probability p<span class="kw">&lt;/u&gt;</span>, and <span class="kw">&lt;u&gt;</span>0 with probability 1 - p<span class="kw">&lt;/u&gt;</span>.</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>AKA the “indicator” random variable.</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Let X be a Bernoulli(p) random variable</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span> = 1 * p + 0 * (1-p) = p$</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>$\mathbb{E}<span class="co">[</span><span class="ot">X^2</span><span class="co">]</span> = 1^2 * p + 0 * (1-p) = p$</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\text{Var}(X) = \mathbb{E}<span class="co">[</span><span class="ot">X^2</span><span class="co">]</span> - (\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span>)^2 = p - p^2 = p(1-p)$</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Binomial(n, p)**</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Number of 1s in $n$ independent Bernoulli(p) trials.</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Let $Y$ be a Binomial(n, p) random variable.</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>The distribution of $Y$ is given by the binomial formula, and we can write $Y = \sum_{i=1}^n X_i$ where:</span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>$X_i$ s the indicator of success on trial i. $X_i = 1$ if trial i is a success, else 0.</span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>All $X_i$ are i.i.d. and Bernoulli(p).</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\mathbb{E}<span class="co">[</span><span class="ot">Y</span><span class="co">]</span> = \sum_{i=1}^n \mathbb{E}<span class="co">[</span><span class="ot">X_i</span><span class="co">]</span> = np$</span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\text{Var}(X) = \sum_{i=1}^n \text{Var}(X_i) = np(1-p)$ </span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="ss">      * </span>$X_i$'s are independent, so $\text{Cov}(X_i, X_j) = 0$ for all i, j.</span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Uniform on a finite set of values</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Probability of each value is 1 / (number of possible values).</span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>For example, a standard/fair die.</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Uniform on the unit interval (0, 1)</span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Density is flat at 1 on (0, 1) and 0 elsewhere.</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Normal($\mu, \sigma^2$)</span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>$f(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{<span class="sc">\!</span>2}\,\right)$</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### Example</span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>Suppose you win cash based on the number of heads you get in a series of 20 coin flips.</span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>Let $X_i = 1$ if the $i$-th coin is heads, 0 otherwise. Which payout strategy would you choose?</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>A. $Y_A = 10 * X_1 + 10 * X_2$</span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>B. $Y_B = \sum_{i=1}^{20} X_i$</span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>C. $Y_C = 20 * X_1$</span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution collapse="true"}</span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solution</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>Let $X_1, X_2, ... X_{20}$ be 20 i.i.d Bernoulli(0.5) random variables. Since the $X_i$'s are independent, $\text{Cov}(X_i, X_j) = 0$ for all pairs $i, j$. Additionally, Since $X_i$ is Bernoulli(0.5), we know that $\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span> = p = 0.5$ and $\text{Var}(X) = p(1-p) = 0.25$. We can calculate the following for each scenario: </span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="false"}</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Important Note</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="false"}</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Outcomes</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Explore commonly seen random variables like Bernoulli and Binomial distributions</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Apply the Central Limit Theorem to approximate parameters of a population</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Use sampled data to model an estimation of and infer the true underlying distribution</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Estimate the true population distribution from a sample using the bootstrapping technique</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>Last time, we introduced the idea of random variables: numerical functions of a sample. Most of our work in the last lecture was done to build a background in probability and statistics. Now that we've established some key ideas, we're in a good place to apply what we've learned to our original goal -- understanding how the randomness of a sample impacts the model design process. </span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>In this lecture, we will delve more deeply into the idea of fitting a model to a sample. We'll explore how to re-express our modeling process in terms of random variables and use this new understanding to steer model complexity. </span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Common Random Variables</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>There are several cases of random variables that appear often and have useful properties. Below are the ones we will explore further in this course. The numbers in parentheses are the parameters of a random variable, which are constants. Parameters define a random variable’s shape (i.e., distribution) and its values. For this lecture, we'll focus more heavily on the bolded random variables and their special properties, but you should familiarize yourself with all the ones listed below: </span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Bernoulli(p)**</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Takes on <span class="kw">&lt;u&gt;</span>value 1 with probability p<span class="kw">&lt;/u&gt;</span>, and <span class="kw">&lt;u&gt;</span>0 with probability 1 - p<span class="kw">&lt;/u&gt;</span>.</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>AKA the “indicator” random variable.</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Let X be a Bernoulli(p) random variable</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span> = 1 * p + 0 * (1-p) = p$</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>$\mathbb{E}<span class="co">[</span><span class="ot">X^2</span><span class="co">]</span> = 1^2 * p + 0 * (1-p) = p$</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\text{Var}(X) = \mathbb{E}<span class="co">[</span><span class="ot">X^2</span><span class="co">]</span> - (\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span>)^2 = p - p^2 = p(1-p)$</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Binomial(n, p)**</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Number of 1s in $n$ independent Bernoulli(p) trials.</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Let $Y$ be a Binomial(n, p) random variable.</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>The distribution of $Y$ is given by the binomial formula, and we can write $Y = \sum_{i=1}^n X_i$ where:</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>$X_i$ s the indicator of success on trial i. $X_i = 1$ if trial i is a success, else 0.</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">        * </span>All $X_i$ are i.i.d. and Bernoulli(p).</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\mathbb{E}<span class="co">[</span><span class="ot">Y</span><span class="co">]</span> = \sum_{i=1}^n \mathbb{E}<span class="co">[</span><span class="ot">X_i</span><span class="co">]</span> = np$</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>$\text{Var}(X) = \sum_{i=1}^n \text{Var}(X_i) = np(1-p)$ </span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="ss">      * </span>$X_i$'s are independent, so $\text{Cov}(X_i, X_j) = 0$ for all i, j.</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Uniform on a finite set of values</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Probability of each value is 1 / (number of possible values).</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>For example, a standard/fair die.</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Uniform on the unit interval (0, 1)</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Density is flat at 1 on (0, 1) and 0 elsewhere.</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Normal($\mu, \sigma^2$)</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>$f(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\left( -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{<span class="sc">\!</span>2}\,\right)$</span>
 <span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>|   | A. $Y_A = 10 * X_1 + 10 * X_2$ | B. $Y_B = \sum_{i=1}^{20} X_i$ | C. $Y_C = 20 * X_1$ | </span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>| --- | --- | --- | --- |</span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>| Expectation | $\mathbb{E}<span class="co">[</span><span class="ot">Y_A</span><span class="co">]</span> = 10 (0.5) + 10(0.5) = 10$ | $\mathbb{E}<span class="co">[</span><span class="ot">Y_B</span><span class="co">]</span> = 0.5 + ... + 0.5 = 10$ | $\mathbb{E}<span class="co">[</span><span class="ot">Y_C</span><span class="co">]</span> = 20(0.5) = 10$  | </span>
-<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>| Variance | $\text{Var}(Y_A) = 10^2 (0.25) + 10^2 (0.25) = 50$ | $\text{Var}(Y_B) = 0.25 + ... + 0.25 = 5$ | $\text{Var}(Y_C) = 20^2 (0.25) = 100$ | </span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>| Standard Deviation | $\text{SD}(Y_A) \approx 7.07$ | $\text{SD}(Y_B) \approx 2.24$ | $\text{SD}(Y_C) = 10$  | </span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Example</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>Suppose you win cash based on the number of heads you get in a series of 20 coin flips.</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>Let $X_i = 1$ if the $i$-th coin is heads, 0 otherwise. Which payout strategy would you choose?</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>A. $Y_A = 10 * X_1 + 10 * X_2$</span>
 <span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>As we can see, all the scenarios have the same expected value but different variances. The higher the variance, the greater the risk and uncertainty, so the "right" strategy depends on your personal preference. Would you choose the "safest" option B, the most "risky" option C, or somewhere in the middle (option A)?</span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sample Statistics </span></span>
-<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>Today, we've talked extensively about populations; if we know the distribution of a random variable, we can reliably compute expectation, variance, functions of the random variable, etc. </span>
-<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>Note that:</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>B. $Y_B = \sum_{i=1}^{20} X_i$</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>C. $Y_C = 20 * X_1$</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution collapse="true"}</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Solution</span></span>
 <span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>The distribution of a *population* describes how a random variable behaves across *all* individuals of interest. </span>
-<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>The distribution of a *sample* describes how a random variable behaves in a *specific sample* from the population. </span>
-<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>In Data Science, however, we often do not have access to the whole population, so we don’t know its distribution. As such, we need to collect a sample and use its distribution to estimate or infer properties of the population. In cases like these, we can take several samples of size $n$ from the population (an easy way to do this is using <span class="in">`df.sample(n, replace=True)`</span>), and compute the mean of each *sample*. When sampling, we make the (big) assumption that we sample uniformly at random with replacement from the population; each observation in our sample is a random variable drawn i.i.d from our population distribution. Remember that our sample mean is a random variable since it depends on our randomly drawn sample! On the other hand, our population mean is simply a number (a fixed value).</span>
-<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sample Mean </span></span>
-<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>Consider an i.i.d. sample $X_1, X_2, ..., X_n$ drawn from a population with mean 𝜇 and SD 𝜎.</span>
-<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>We define the sample mean as $$\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i$$</span>
-<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>The expectation of the sample mean is given by: </span>
-<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>$$\begin{align} </span>
-<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>    \mathbb{E}<span class="co">[</span><span class="ot">\bar{X}_n</span><span class="co">]</span> &amp;= \frac{1}{n} \sum_{i=1}^n \mathbb{E}<span class="co">[</span><span class="ot">X_i</span><span class="co">]</span> <span class="sc">\\</span></span>
-<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>    &amp;= \frac{1}{n} (n \mu) <span class="sc">\\</span></span>
-<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>    &amp;= \mu </span>
-<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>\end{align}$$</span>
-<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>The variance is given by: </span>
-<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>$$\begin{align} </span>
-<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>    \text{Var}(\bar{X}_n) &amp;= \frac{1}{n^2} \text{Var}( \sum_{i=1}^n X_i) <span class="sc">\\</span></span>
-<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>    &amp;=  \frac{1}{n^2} \left( \sum_{i=1}^n \text{Var}(X_i) \right) <span class="sc">\\</span></span>
-<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>    &amp;=  \frac{1}{n^2} (n \sigma^2) = \frac{\sigma^2}{n}</span>
-<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>\end{align}$$</span>
-<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>$\bar{X}_n$ is normally distributed by the Central Limit Theorem (CLT).</span>
-<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Central Limit Theorem</span></span>
-<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>In <span class="co">[</span><span class="ot">Data 8</span><span class="co">](https://inferentialthinking.com/chapters/14/4/Central_Limit_Theorem.html?)</span> and in the previous lecture, you encountered the **Central Limit Theorem (CLT)**. </span>
-<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>This is a powerful theorem for estimating the distribution of a population with mean $\mu$ and standard deviation $\sigma$ from a collection of smaller samples. The CLT tells us that if an i.i.d sample of size $n$ is large, then the probability distribution of the **sample mean** is **roughly normal** with mean $\mu$ and SD of $\frac{\sigma}{\sqrt{n}}$. More generally, any theorem that provides the rough distribution of a statistic and **doesn't need the distribution of the population** is valuable to data scientists! This is because we rarely know a lot about the population. </span>
-<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/clt.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'clt'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'400'</span><span class="kw">&gt;</span></span>
-<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>Importantly, the CLT assumes that each observation in our samples is drawn i.i.d from the distribution of the population. In addition, the CLT is accurate only when $n$ is "large", but what counts as a "large" sample size depends on the specific distribution. If a population is highly symmetric and unimodal, we could need as few as $n=20$; if a population is very skewed, we need a larger $n$. If in doubt, you can bootstrap the sample mean and see if the bootstrapped distribution is bell-shaped. Classes like Data 140 investigate this idea in great detail.</span>
-<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- The CLT states that no matter what population you are drawing from, if an i.i.d. sample of size $n$ is large, the probability distribution of the sample mean is roughly normal with mean 𝜇 and SD $\sigma/\sqrt{n}$. --&gt;</span></span>
-<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>For a more in-depth demo, check out <span class="co">[</span><span class="ot">onlinestatbook</span><span class="co">](https://onlinestatbook.com/stat_sim/sampling_dist/)</span>. </span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>Let $X_1, X_2, ... X_{20}$ be 20 i.i.d Bernoulli(0.5) random variables. Since the $X_i$'s are independent, $\text{Cov}(X_i, X_j) = 0$ for all pairs $i, j$. Additionally, Since $X_i$ is Bernoulli(0.5), we know that $\mathbb{E}<span class="co">[</span><span class="ot">X</span><span class="co">]</span> = p = 0.5$ and $\text{Var}(X) = p(1-p) = 0.25$. We can calculate the following for each scenario: </span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>|   | A. $Y_A = 10 * X_1 + 10 * X_2$ | B. $Y_B = \sum_{i=1}^{20} X_i$ | C. $Y_C = 20 * X_1$ | </span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>| --- | --- | --- | --- |</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>| Expectation | $\mathbb{E}<span class="co">[</span><span class="ot">Y_A</span><span class="co">]</span> = 10 (0.5) + 10(0.5) = 10$ | $\mathbb{E}<span class="co">[</span><span class="ot">Y_B</span><span class="co">]</span> = 0.5 + ... + 0.5 = 10$ | $\mathbb{E}<span class="co">[</span><span class="ot">Y_C</span><span class="co">]</span> = 20(0.5) = 10$  | </span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>| Variance | $\text{Var}(Y_A) = 10^2 (0.25) + 10^2 (0.25) = 50$ | $\text{Var}(Y_B) = 0.25 + ... + 0.25 = 5$ | $\text{Var}(Y_C) = 20^2 (0.25) = 100$ | </span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>| Standard Deviation | $\text{SD}(Y_A) \approx 7.07$ | $\text{SD}(Y_B) \approx 2.24$ | $\text{SD}(Y_C) = 10$  | </span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>As we can see, all the scenarios have the same expected value but different variances. The higher the variance, the greater the risk and uncertainty, so the "right" strategy depends on your personal preference. Would you choose the "safest" option B, the most "risky" option C, or somewhere in the middle (option A)?</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sample Statistics </span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>Today, we've talked extensively about populations; if we know the distribution of a random variable, we can reliably compute expectation, variance, functions of the random variable, etc. </span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>Note that:</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>The distribution of a *population* describes how a random variable behaves across *all* individuals of interest. </span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>The distribution of a *sample* describes how a random variable behaves in a *specific sample* from the population. </span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>In Data Science, however, we often do not have access to the whole population, so we don’t know its distribution. As such, we need to collect a sample and use its distribution to estimate or infer properties of the population. In cases like these, we can take several samples of size $n$ from the population (an easy way to do this is using <span class="in">`df.sample(n, replace=True)`</span>), and compute the mean of each *sample*. When sampling, we make the (big) assumption that we sample uniformly at random with replacement from the population; each observation in our sample is a random variable drawn i.i.d from our population distribution. Remember that our sample mean is a random variable since it depends on our randomly drawn sample! On the other hand, our population mean is simply a number (a fixed value).</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sample Mean </span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>Consider an i.i.d. sample $X_1, X_2, ..., X_n$ drawn from a population with mean 𝜇 and SD 𝜎.</span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>We define the sample mean as $$\bar{X}_n = \frac{1}{n} \sum_{i=1}^n X_i$$</span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>The expectation of the sample mean is given by: </span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>$$\begin{align} </span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>    \mathbb{E}<span class="co">[</span><span class="ot">\bar{X}_n</span><span class="co">]</span> &amp;= \frac{1}{n} \sum_{i=1}^n \mathbb{E}<span class="co">[</span><span class="ot">X_i</span><span class="co">]</span> <span class="sc">\\</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>    &amp;= \frac{1}{n} (n \mu) <span class="sc">\\</span></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>    &amp;= \mu </span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>\end{align}$$</span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>The variance is given by: </span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>$$\begin{align} </span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>    \text{Var}(\bar{X}_n) &amp;= \frac{1}{n^2} \text{Var}( \sum_{i=1}^n X_i) <span class="sc">\\</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>    &amp;=  \frac{1}{n^2} \left( \sum_{i=1}^n \text{Var}(X_i) \right) <span class="sc">\\</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>    &amp;=  \frac{1}{n^2} (n \sigma^2) = \frac{\sigma^2}{n}</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>\end{align}$$</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>$\bar{X}_n$ is normally distributed by the Central Limit Theorem (CLT).</span>
 <span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Using the Sample Mean to Estimate the Population Mean</span></span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>Now let's say we want to use the sample mean to **estimate** the population mean, for example, the average height of Cal undergraduates. We can typically collect a **single sample**, which has just one average. However, what if we happened, by random chance, to draw a sample with a different mean or spread than that of the population? We might get a skewed view of how the population behaves (consider the extreme case where we happen to sample the exact same value $n$ times!). </span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Central Limit Theorem</span></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>In <span class="co">[</span><span class="ot">Data 8</span><span class="co">](https://inferentialthinking.com/chapters/14/4/Central_Limit_Theorem.html?)</span> and in the previous lecture, you encountered the **Central Limit Theorem (CLT)**. </span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a>This is a powerful theorem for estimating the distribution of a population with mean $\mu$ and standard deviation $\sigma$ from a collection of smaller samples. The CLT tells us that if an i.i.d sample of size $n$ is large, then the probability distribution of the **sample mean** is **roughly normal** with mean $\mu$ and SD of $\frac{\sigma}{\sqrt{n}}$. More generally, any theorem that provides the rough distribution of a statistic and **doesn't need the distribution of the population** is valuable to data scientists! This is because we rarely know a lot about the population. </span>
 <span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/CLTdiff.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'clt'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'400'</span><span class="kw">&gt;</span></span>
-<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/clt.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'clt'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'400'</span><span class="kw">&gt;</span></span>
 <span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>For example, notice the difference in variation between these two distributions that are different in sample size. The distribution with a bigger sample size ($n=800$) is tighter around the mean than the distribution with a smaller sample size ($n=200$). Try plugging in these values into the standard deviation equation for the normal distribution to make sense of this! </span>
-<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>Applying the CLT allows us to make sense of all of this and resolve this issue. By drawing many samples, we can consider how the sample distribution varies across multiple subsets of the data. This allows us to approximate the properties of the population without the need to survey every single member. </span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a>Importantly, the CLT assumes that each observation in our samples is drawn i.i.d from the distribution of the population. In addition, the CLT is accurate only when $n$ is "large", but what counts as a "large" sample size depends on the specific distribution. If a population is highly symmetric and unimodal, we could need as few as $n=20$; if a population is very skewed, we need a larger $n$. If in doubt, you can bootstrap the sample mean and see if the bootstrapped distribution is bell-shaped. Classes like Data 140 investigate this idea in great detail.</span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- The CLT states that no matter what population you are drawing from, if an i.i.d. sample of size $n$ is large, the probability distribution of the sample mean is roughly normal with mean 𝜇 and SD $\sigma/\sqrt{n}$. --&gt;</span></span>
 <span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>Given this potential variance, it is also important that we consider the **average value and spread** of all possible sample means, and what this means for how big $n$ should be. For every sample size, the expected value of the sample mean is the population mean: $$\mathbb{E}[\bar{X}_n] = \mu$$. We call the sample mean an **unbiased estimator** of the population mean and will explore this idea more in the next lecture. </span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>For a more in-depth demo, check out <span class="co">[</span><span class="ot">onlinestatbook</span><span class="co">](https://onlinestatbook.com/stat_sim/sampling_dist/)</span>. </span>
 <span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data 8 Recap: Square Root Law</span></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a><span class="fu">### Using the Sample Mean to Estimate the Population Mean</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>Now let's say we want to use the sample mean to **estimate** the population mean, for example, the average height of Cal undergraduates. We can typically collect a **single sample**, which has just one average. However, what if we happened, by random chance, to draw a sample with a different mean or spread than that of the population? We might get a skewed view of how the population behaves (consider the extreme case where we happen to sample the exact same value $n$ times!). </span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>The square root law (<span class="co">[</span><span class="ot">Data 8</span><span class="co">](https://inferentialthinking.com/chapters/14/5/Variability_of_the_Sample_Mean.html#the-square-root-law)</span>) states that if you increase the sample size by a factor, the SD decreases by the square root of the factor. $$\text{SD}(\bar{X_n}) = \frac{\sigma}{\sqrt{n}}$$ The sample mean is more likely to be close to the population mean if we have a larger sample size.</span>
-<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prediction and Inference</span></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/CLTdiff.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'clt'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'400'</span><span class="kw">&gt;</span></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>At this point in the course, we've spent a great deal of time working with models. When we first introduced the idea of modeling a few weeks ago, we did so in the context of **prediction**: using models to make *accurate predictions* about unseen data. Another reason we might build models is to better understand complex phenomena in the world around us. **Inference** is the task of using a model to infer the true underlying relationships between the feature and response variables. For example, if we are working with a set of housing data, *prediction* might ask: given the attributes of a house, how much is it worth? *Inference* might ask: how much does having a local park impact the value of a house?</span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>For example, notice the difference in variation between these two distributions that are different in sample size. The distribution with a bigger sample size ($n=800$) is tighter around the mean than the distribution with a smaller sample size ($n=200$). Try plugging in these values into the standard deviation equation for the normal distribution to make sense of this! </span>
 <span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>A major goal of inference is to draw conclusions about the full population of data given only a random sample. To do this, we aim to estimate the value of a **parameter**, which is a numerical function of the *population* (for example, the population mean $\mu$). We use a collected sample to construct a **statistic**, which is a numerical function of the random *sample* (for example, the sample mean $\bar{X}_n$). It's helpful to think "p" for "parameter" and "population," and "s" for "sample" and "statistic."</span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>Applying the CLT allows us to make sense of all of this and resolve this issue. By drawing many samples, we can consider how the sample distribution varies across multiple subsets of the data. This allows us to approximate the properties of the population without the need to survey every single member. </span>
 <span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>Since the sample represents a *random* subset of the population, any statistic we generate will likely deviate from the true population parameter, and it *could have been different*. We say that the sample statistic is an **estimator** of the true population parameter. Notationally, the population parameter is typically called $\theta$, while its estimator is denoted by $\hat{\theta}$.</span>
+<span id="cb2-155"><a href="#cb2-155" aria-hidden="true" tabindex="-1"></a>Given this potential variance, it is also important that we consider the **average value and spread** of all possible sample means, and what this means for how big $n$ should be. For every sample size, the expected value of the sample mean is the population mean: $$\mathbb{E}[\bar{X}_n] = \mu$$. We call the sample mean an **unbiased estimator** of the population mean and will explore this idea more in the next lecture. </span>
 <span id="cb2-156"><a href="#cb2-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a>To address our inference question, we aim to construct estimators that closely estimate the value of the population parameter. We evaluate how "good" an estimator is by answering three questions:</span>
-<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Do we get the right answer for the parameter, on average?</span>
-<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>How variable is the answer?</span>
-<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>How close is our answer to the parameter?</span>
-<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a><span class="fu">### Modeling as Estimation</span></span>
-<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a>Now that we've established the idea of an estimator, let's see how we can apply this learning to the modeling process. To do so, we'll take a moment to formalize our data collection and models in the language of random variables.</span>
-<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a>Say we are working with an input variable, $x$, and a response variable, $Y$. We assume that $Y$ and $x$ are linked by some relationship $g$; in other words, $Y = g(x)$. $g$ represents some "universal truth" or "law of nature" that defines the underlying relationship between $x$ and $Y$. In the image below, $g$ is denoted by the red line.</span>
-<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a>As data scientists, however, we have no way of directly "seeing" the underlying relationship $g$. The best we can do is collect observed data out in the real world to try to understand this relationship. Unfortunately, the data collection process will always have some inherent error (think of the randomness you might encounter when taking measurements in a scientific experiment). We say that each observation comes with some random error or **noise** term, $\epsilon$. This error is assumed to be a random variable with expectation $\mathbb{E}(\epsilon)=0$, variance $\text{Var}(\epsilon) = \sigma^2$, and be i.i.d. across each observation. The existence of this random noise means that our observations, $Y(x)$, are *random variables*.</span>
-<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/data.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'data'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'700'</span><span class="kw">&gt;</span></span>
-<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
-<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a>We can only observe our random sample of data, represented by the blue points above. From this sample, we want to estimate the true relationship $g$. We do this by constructing the model $\hat{Y}(x)$ to estimate $g$. </span>
-<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a>$$\text{True relationship: } g(x)$$</span>
-<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a>$$\text{Observed relationship: }Y = g(x) + \epsilon$$</span>
-<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a>$$\text{Prediction: }\hat{Y}(x)$$</span>
-<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/y_hat.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'600'</span><span class="kw">&gt;</span></span>
-<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
-<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Estimating a Linear Relationship</span></span>
-<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a>If we assume that the true relationship $g$ is linear, we can express the response as $Y = f_{\theta}(x)$, where our true relationship is modeled by </span>
-<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a>$$Y = g(x) + \epsilon$$</span>
-<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a>$$ f_{\theta}(x) = Y = \theta_0 + \sum_{j=1}^p \theta_j x_j + \epsilon$$</span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip collapse="true"}</span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data 8 Recap: Square Root Law</span></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a>The square root law (<span class="co">[</span><span class="ot">Data 8</span><span class="co">](https://inferentialthinking.com/chapters/14/5/Variability_of_the_Sample_Mean.html#the-square-root-law)</span>) states that if you increase the sample size by a factor, the SD decreases by the square root of the factor. $$\text{SD}(\bar{X_n}) = \frac{\sigma}{\sqrt{n}}$$ The sample mean is more likely to be close to the population mean if we have a larger sample size.</span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prediction and Inference</span></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>At this point in the course, we've spent a great deal of time working with models. When we first introduced the idea of modeling a few weeks ago, we did so in the context of **prediction**: using models to make *accurate predictions* about unseen data. Another reason we might build models is to better understand complex phenomena in the world around us. **Inference** is the task of using a model to infer the true underlying relationships between the feature and response variables. For example, if we are working with a set of housing data, *prediction* might ask: given the attributes of a house, how much is it worth? *Inference* might ask: how much does having a local park impact the value of a house?</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>A major goal of inference is to draw conclusions about the full population of data given only a random sample. To do this, we aim to estimate the value of a **parameter**, which is a numerical function of the *population* (for example, the population mean $\mu$). We use a collected sample to construct a **statistic**, which is a numerical function of the random *sample* (for example, the sample mean $\bar{X}_n$). It's helpful to think "p" for "parameter" and "population," and "s" for "sample" and "statistic."</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>Since the sample represents a *random* subset of the population, any statistic we generate will likely deviate from the true population parameter, and it *could have been different*. We say that the sample statistic is an **estimator** of the true population parameter. Notationally, the population parameter is typically called $\theta$, while its estimator is denoted by $\hat{\theta}$.</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>To address our inference question, we aim to construct estimators that closely estimate the value of the population parameter. We evaluate how "good" an estimator is by answering three questions:</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Do we get the right answer for the parameter, on average?</span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>How variable is the answer?</span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>How close is our answer to the parameter?</span>
+<span id="cb2-177"><a href="#cb2-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-178"><a href="#cb2-178" aria-hidden="true" tabindex="-1"></a><span class="fu">### Modeling as Estimation</span></span>
+<span id="cb2-179"><a href="#cb2-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-180"><a href="#cb2-180" aria-hidden="true" tabindex="-1"></a>Now that we've established the idea of an estimator, let's see how we can apply this learning to the modeling process. To do so, we'll take a moment to formalize our data collection and models in the language of random variables.</span>
+<span id="cb2-181"><a href="#cb2-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-182"><a href="#cb2-182" aria-hidden="true" tabindex="-1"></a>Say we are working with an input variable, $x$, and a response variable, $Y$. We assume that $Y$ and $x$ are linked by some relationship $g$; in other words, $Y = g(x)$. $g$ represents some "universal truth" or "law of nature" that defines the underlying relationship between $x$ and $Y$. In the image below, $g$ is denoted by the red line.</span>
+<span id="cb2-183"><a href="#cb2-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-184"><a href="#cb2-184" aria-hidden="true" tabindex="-1"></a>As data scientists, however, we have no way of directly "seeing" the underlying relationship $g$. The best we can do is collect observed data out in the real world to try to understand this relationship. Unfortunately, the data collection process will always have some inherent error (think of the randomness you might encounter when taking measurements in a scientific experiment). We say that each observation comes with some random error or **noise** term, $\epsilon$. This error is assumed to be a random variable with expectation $\mathbb{E}(\epsilon)=0$, variance $\text{Var}(\epsilon) = \sigma^2$, and be i.i.d. across each observation. The existence of this random noise means that our observations, $Y(x)$, are *random variables*.</span>
+<span id="cb2-185"><a href="#cb2-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-186"><a href="#cb2-186" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-187"><a href="#cb2-187" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/data.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'data'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'700'</span><span class="kw">&gt;</span></span>
+<span id="cb2-188"><a href="#cb2-188" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-189"><a href="#cb2-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-190"><a href="#cb2-190" aria-hidden="true" tabindex="-1"></a>We can only observe our random sample of data, represented by the blue points above. From this sample, we want to estimate the true relationship $g$. We do this by constructing the model $\hat{Y}(x)$ to estimate $g$. </span>
 <span id="cb2-191"><a href="#cb2-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
-<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Which Expressions are random? </span></span>
-<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a>In our two equations above, the true relationship $g(x) = \theta_0 + \sum_{j=1}^p \theta_j x_j$ is not random, but $\epsilon$ is random. Hence, $Y = f_{\theta}(x)$ is also random. </span>
-<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a>This true relationship has true, unobservable parameters $\theta$, and it has random noise $\epsilon$, so we can never observe the true relationship. Instead, the next best thing we can do is obtain a sample $\Bbb{X}$, $\Bbb{Y}$ of $n$ observed relationships, $(x, Y)$ and use it to train a model and obtain an estimate of $\hat{\theta}$</span>
-<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>$$\hat{Y}(x) = f_{\hat{\theta}}(x) = \hat{\theta_0} + \sum_{j=1}^p \hat{\theta_j} x_j$$</span>
-<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
-<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Which Expressions are random? </span></span>
-<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a>In our estimating equation above, our sample $\Bbb{X}$, $\Bbb{Y}$ are random. Hence, the estimates we calculate from our samples $\hat{\theta}$ are also random, so our predictor $\hat{Y}(x)$ is also random. </span>
-<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a>Now taking a look at our original equations, we can see that they both have differing sources of randomness. For our observed relationship, $Y = g(x) + \epsilon$, $\epsilon$ represents measurement errors and reflects randomness from the future. For the estimation model, the data we have is a random sample collected from the population, so the randomness from the past.</span>
-<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bootstrap Resampling (Review)</span></span>
-<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>To determine properties of the sampling distribution of an estimator like variance, we’d need to have access to the population so that we can consider all possible samples and compute an estimate for each sample. </span>
+<span id="cb2-192"><a href="#cb2-192" aria-hidden="true" tabindex="-1"></a>$$\text{True relationship: } g(x)$$</span>
+<span id="cb2-193"><a href="#cb2-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-194"><a href="#cb2-194" aria-hidden="true" tabindex="-1"></a>$$\text{Observed relationship: }Y = g(x) + \epsilon$$</span>
+<span id="cb2-195"><a href="#cb2-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-196"><a href="#cb2-196" aria-hidden="true" tabindex="-1"></a>$$\text{Prediction: }\hat{Y}(x)$$</span>
+<span id="cb2-197"><a href="#cb2-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/y_hat.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'600'</span><span class="kw">&gt;</span></span>
+<span id="cb2-200"><a href="#cb2-200" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-201"><a href="#cb2-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-202"><a href="#cb2-202" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Estimating a Linear Relationship</span></span>
+<span id="cb2-203"><a href="#cb2-203" aria-hidden="true" tabindex="-1"></a>If we assume that the true relationship $g$ is linear, we can express the response as $Y = f_{\theta}(x)$, where our true relationship is modeled by </span>
+<span id="cb2-204"><a href="#cb2-204" aria-hidden="true" tabindex="-1"></a>$$Y = g(x) + \epsilon$$</span>
+<span id="cb2-205"><a href="#cb2-205" aria-hidden="true" tabindex="-1"></a>$$ f_{\theta}(x) = Y = \theta_0 + \sum_{j=1}^p \theta_j x_j + \epsilon$$</span>
+<span id="cb2-206"><a href="#cb2-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-207"><a href="#cb2-207" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb2-208"><a href="#cb2-208" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Which Expressions are random? </span></span>
+<span id="cb2-209"><a href="#cb2-209" aria-hidden="true" tabindex="-1"></a>In our two equations above, the true relationship $g(x) = \theta_0 + \sum_{j=1}^p \theta_j x_j$ is not random, but $\epsilon$ is random. Hence, $Y = f_{\theta}(x)$ is also random. </span>
+<span id="cb2-210"><a href="#cb2-210" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb2-211"><a href="#cb2-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/population_samples.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'650'</span><span class="kw">&gt;</span></span>
-<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
-<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a>However, we don’t have access to the population; we only have *one* random sample from the population. How can we consider all possible samples if we only have one? </span>
-<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a>The idea of bootstrapping is to treat our random sample as a "population" and resample from it *with replacement*. Intuitively, a random sample resembles the population, so a random *resample* also resamples a random sample. </span>
-<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/bootstrap.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'700'</span><span class="kw">&gt;</span></span>
-<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-212"><a href="#cb2-212" aria-hidden="true" tabindex="-1"></a>This true relationship has true, unobservable parameters $\theta$, and it has random noise $\epsilon$, so we can never observe the true relationship. Instead, the next best thing we can do is obtain a sample $\Bbb{X}$, $\Bbb{Y}$ of $n$ observed relationships, $(x, Y)$ and use it to train a model and obtain an estimate of $\hat{\theta}$</span>
+<span id="cb2-213"><a href="#cb2-213" aria-hidden="true" tabindex="-1"></a>$$\hat{Y}(x) = f_{\hat{\theta}}(x) = \hat{\theta_0} + \sum_{j=1}^p \hat{\theta_j} x_j$$</span>
+<span id="cb2-214"><a href="#cb2-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-215"><a href="#cb2-215" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb2-216"><a href="#cb2-216" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Which Expressions are random? </span></span>
+<span id="cb2-217"><a href="#cb2-217" aria-hidden="true" tabindex="-1"></a>In our estimating equation above, our sample $\Bbb{X}$, $\Bbb{Y}$ are random. Hence, the estimates we calculate from our samples $\hat{\theta}$ are also random, so our predictor $\hat{Y}(x)$ is also random. </span>
+<span id="cb2-218"><a href="#cb2-218" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-219"><a href="#cb2-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-220"><a href="#cb2-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-221"><a href="#cb2-221" aria-hidden="true" tabindex="-1"></a>Now taking a look at our original equations, we can see that they both have differing sources of randomness. For our observed relationship, $Y = g(x) + \epsilon$, $\epsilon$ represents measurement errors and reflects randomness from the future. For the estimation model, the data we have is a random sample collected from the population, so the randomness from the past.</span>
 <span id="cb2-222"><a href="#cb2-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a>Bootstrap resampling is a technique for estimating the sampling distribution of an estimator. To execute it, we can follow the pseudocode below: </span>
-<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a><span class="in">collect a random sample of size n (called the bootstrap population)</span></span>
+<span id="cb2-223"><a href="#cb2-223" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bootstrap Resampling (Review)</span></span>
+<span id="cb2-224"><a href="#cb2-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-225"><a href="#cb2-225" aria-hidden="true" tabindex="-1"></a>To determine properties of the sampling distribution of an estimator like variance, we’d need to have access to the population so that we can consider all possible samples and compute an estimate for each sample. </span>
 <span id="cb2-226"><a href="#cb2-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a><span class="in">initiate list of estimates</span></span>
-<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="in">repeat 10,000 times:</span></span>
-<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a><span class="in">    resample with replacement n times from bootstrap population</span></span>
-<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a><span class="in">apply estimator f to resample</span></span>
-<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="in">store in list</span></span>
-<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a><span class="in">list of estimates is the bootstrapped sampling distribution of f</span></span>
-<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning collapse="true"}</span>
-<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why must we resample *with replacement*? </span></span>
-<span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a>Given an original sample of size $n$, we want a resample that has the same size $n$ as the original. Sampling *without* replacement will give us the original sample with shuffled rows. Hence, when we calculate summary statistics like the average, our sample *without* replacement will always have the same average as the original sample, defeating the purpose of a bootstrap. </span>
-<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-227"><a href="#cb2-227" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-228"><a href="#cb2-228" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/population_samples.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'650'</span><span class="kw">&gt;</span></span>
+<span id="cb2-229"><a href="#cb2-229" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-230"><a href="#cb2-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-231"><a href="#cb2-231" aria-hidden="true" tabindex="-1"></a>However, we don’t have access to the population; we only have *one* random sample from the population. How can we consider all possible samples if we only have one? </span>
+<span id="cb2-232"><a href="#cb2-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-233"><a href="#cb2-233" aria-hidden="true" tabindex="-1"></a>The idea of bootstrapping is to treat our random sample as a "population" and resample from it *with replacement*. Intuitively, a random sample resembles the population, so a random *resample* also resamples a random sample. </span>
+<span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-235"><a href="#cb2-235" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/bootstrap.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'700'</span><span class="kw">&gt;</span></span>
+<span id="cb2-236"><a href="#cb2-236" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-237"><a href="#cb2-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-238"><a href="#cb2-238" aria-hidden="true" tabindex="-1"></a>Bootstrap resampling is a technique for estimating the sampling distribution of an estimator. To execute it, we can follow the pseudocode below: </span>
+<span id="cb2-239"><a href="#cb2-239" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-240"><a href="#cb2-240" aria-hidden="true" tabindex="-1"></a><span class="in">collect a random sample of size n (called the bootstrap population)</span></span>
+<span id="cb2-241"><a href="#cb2-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-242"><a href="#cb2-242" aria-hidden="true" tabindex="-1"></a><span class="in">initiate list of estimates</span></span>
 <span id="cb2-243"><a href="#cb2-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a>How well does bootstrapping actually represent our population? The bootstrapped sampling distribution of an estimator does not exactly match the sampling distribution of that estimator, but it is often close. Similarly, the variance of the bootstrapped distribution is often close to the true variance of the estimator. The example below displays the results from different bootstraps from a *known* population using a sample size of $n=50$.</span>
-<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/bootstrapped_samples.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'600'</span><span class="kw">&gt;</span></span>
-<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
-<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a>In the real world, we don't know the population distribution. The center of the boostrapped distribution is the estimator applied to our original sample, so we have no way of recovering the estimator's true expected value. The quality of our bootstrapped distribution depends on the quality of our original sample; if our original sample was not representative of the population, bootstrap is next to useless.</span>
-<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a>One thing to note is that the bootstrap often does not work well for some statistics, like the median or other quantile-based statistics, that depend heavily on a small number of observations out of a larger sample. **Bootstrapping does not overcome the weakness of small samples as a basis for inference**. Indeed, for the very smallest samples, it may be better to make additional assumptions such as a parametric family.  </span>
-<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-244"><a href="#cb2-244" aria-hidden="true" tabindex="-1"></a><span class="in">repeat 10,000 times:</span></span>
+<span id="cb2-245"><a href="#cb2-245" aria-hidden="true" tabindex="-1"></a><span class="in">    resample with replacement n times from bootstrap population</span></span>
+<span id="cb2-246"><a href="#cb2-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-247"><a href="#cb2-247" aria-hidden="true" tabindex="-1"></a><span class="in">apply estimator f to resample</span></span>
+<span id="cb2-248"><a href="#cb2-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-249"><a href="#cb2-249" aria-hidden="true" tabindex="-1"></a><span class="in">store in list</span></span>
+<span id="cb2-250"><a href="#cb2-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-251"><a href="#cb2-251" aria-hidden="true" tabindex="-1"></a><span class="in">list of estimates is the bootstrapped sampling distribution of f</span></span>
+<span id="cb2-252"><a href="#cb2-252" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-253"><a href="#cb2-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-254"><a href="#cb2-254" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning collapse="true"}</span>
+<span id="cb2-255"><a href="#cb2-255" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why must we resample *with replacement*? </span></span>
+<span id="cb2-256"><a href="#cb2-256" aria-hidden="true" tabindex="-1"></a>Given an original sample of size $n$, we want a resample that has the same size $n$ as the original. Sampling *without* replacement will give us the original sample with shuffled rows. Hence, when we calculate summary statistics like the average, our sample *without* replacement will always have the same average as the original sample, defeating the purpose of a bootstrap. </span>
+<span id="cb2-257"><a href="#cb2-257" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-258"><a href="#cb2-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-259"><a href="#cb2-259" aria-hidden="true" tabindex="-1"></a>How well does bootstrapping actually represent our population? The bootstrapped sampling distribution of an estimator does not exactly match the sampling distribution of that estimator, but it is often close. Similarly, the variance of the bootstrapped distribution is often close to the true variance of the estimator. The example below displays the results from different bootstraps from a *known* population using a sample size of $n=50$.</span>
+<span id="cb2-260"><a href="#cb2-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-261"><a href="#cb2-261" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb2-262"><a href="#cb2-262" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/bootstrapped_samples.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">'y_hat'</span> <span class="er">width</span><span class="ot">=</span><span class="st">'600'</span><span class="kw">&gt;</span></span>
+<span id="cb2-263"><a href="#cb2-263" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-264"><a href="#cb2-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-265"><a href="#cb2-265" aria-hidden="true" tabindex="-1"></a>In the real world, we don't know the population distribution. The center of the boostrapped distribution is the estimator applied to our original sample, so we have no way of recovering the estimator's true expected value. The quality of our bootstrapped distribution depends on the quality of our original sample; if our original sample was not representative of the population, bootstrap is next to useless.</span>
+<span id="cb2-266"><a href="#cb2-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-267"><a href="#cb2-267" aria-hidden="true" tabindex="-1"></a>One thing to note is that the bootstrap often does not work well for some statistics, like the median or other quantile-based statistics, that depend heavily on a small number of observations out of a larger sample. **Bootstrapping does not overcome the weakness of small samples as a basis for inference**. Indeed, for the very smallest samples, it may be better to make additional assumptions such as a parametric family.  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

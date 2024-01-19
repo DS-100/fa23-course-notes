@@ -13,7 +13,17 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
 ```{python}
@@ -39,6 +49,11 @@ pd.set_option('display.float_format', '{:.2f}'.format)
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 ```
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note collapse="false"}
 ## Learning Outcomes
@@ -833,21 +848,18 @@ $\text{percent change} = \frac{B - A}{A} \times 100$.
 
 ```{python}
 #| code-fold: false
-#| tags: []
 incidence_2020 = tb_census_df.loc['Total', 'recompute incidence 2020']
 incidence_2020
 ```
 
 ```{python}
 #| code-fold: false
-#| tags: []
 incidence_2021 = tb_census_df.loc['Total', 'recompute incidence 2021']
 incidence_2021
 ```
 
 ```{python}
 #| code-fold: false
-#| tags: []
 difference = (incidence_2021 - incidence_2020)/incidence_2020 * 100
 difference
 ```
@@ -1210,4 +1222,3 @@ There are several ways to approach EDA and Data Wrangling:
     * Identify and **address anomalies**.
     * Apply data transformations and corrections (we'll cover this in the upcoming lecture).
     * **Record everything you do!** Developing in Jupyter Notebook promotes *reproducibility* of your own work!
-

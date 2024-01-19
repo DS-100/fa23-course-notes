@@ -10,8 +10,23 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note collapse="false"}
 ## Learning Outcomes
@@ -558,4 +573,3 @@ Why did we do all this complicated math? We have shown that *minimizing* cross-e
 - By minimizing cross-entropy loss, we are choosing the model parameters that are "most likely" for the data we observed.
 
 Note that this is under the assumption that all data is drawn independently from the same logistic regression model with parameter $\theta$. In fact, many of the model + loss combinations we've seen can be motivated using MLE (e.g., OLS, Ridge Regression, etc.). In probability and ML classes, you'll get the chance to explore MLE further.  
-

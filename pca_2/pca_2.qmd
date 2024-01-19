@@ -10,8 +10,23 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note}
 ## Learning Outcomes
@@ -169,4 +184,3 @@ The demo shows how we can use PCA during the Exploratory Data Analysis stage of 
 2. Avoids multicollinearity in the new features created (i.e. the principal components)
 
 <center><img src="images/slide21.png" alt='slide21' width='500'></center>
-

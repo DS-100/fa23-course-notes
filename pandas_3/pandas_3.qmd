@@ -14,8 +14,23 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note collapse="false"}
 ## Learning Outcomes
@@ -504,7 +519,6 @@ babynames_2022.head()
 Now, we're ready to join the two tables. [`pd.merge`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html) is the `pandas` method used to join DataFrames together.
 
 ```{python}
-#| tags: []
 merged = pd.merge(left = elections, right = babynames_2022, \
                   left_on = "First Name", right_on = "Name")
 merged.head()
@@ -523,4 +537,3 @@ Let's take a closer look at the parameters:
 Congratulations! We finally tackled `pandas`. Don't worry if you are still not feeling very comfortable with it—you will have plenty of chance to practice over the next few weeks.
 
 Next, we will get our hands dirty with some real-world datasets and use our `pandas` knowledge to conduct some exploratory data analysis.
-

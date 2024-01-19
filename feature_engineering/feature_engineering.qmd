@@ -14,8 +14,23 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note collapse="false"}
 ## Learning Outcomes
@@ -445,4 +460,3 @@ We can see that there is a clear trade-off that comes from the complexity of our
 The takeaway here: we need to strike a balance in the complexity of our models; we want models that are generalizable to "unseen" data. A model that is too simple won't be able to capture the key relationships between our variables of interest; a model that is too complex runs the risk of overfitting. 
 
 This begs the question: how do we control the complexity of a model? Stay tuned for our Lecture 16 on Cross-Validation and Regularization!
-

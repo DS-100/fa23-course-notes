@@ -10,8 +10,23 @@ format:
       - cosmo
       - cerulean
     callout-icon: false
-jupyter: python3
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
+
+::: {.callout-note collapse="false"}
+## Important Note
+**This course note was developed in Fall 2023. If you are taking this class in a future semester, please keep in mind that this note may not be up to date with course content for that semester.**
+:::
 
 ::: {.callout-note collapse="false"}
 ## Learning Outcomes
@@ -357,4 +372,3 @@ Our regression models are summarized below. Note the objective function is what 
 | OLS             | $\hat{\mathbb{Y}} = \mathbb{X}\theta$  | MSE           | None           | $\frac{1}{n} \|\mathbb{Y}-\mathbb{X} \theta\|^2_2$                                     | $\hat{\theta}_{OLS} = (\mathbb{X}^{\top}\mathbb{X})^{-1}\mathbb{X}^{\top}\mathbb{Y}$ if $\mathbb{X}$ is full column rank               |
 | Ridge           | $\hat{\mathbb{Y}} = \mathbb{X} \theta$ | MSE           | L2             | $\frac{1}{n} \|\mathbb{Y}-\mathbb{X}\theta\|^2_2 + \lambda \sum_{i=1}^p \theta_i^2$   | $\hat{\theta}_{ridge} = (\mathbb{X}^{\top}\mathbb{X} + n \lambda I)^{-1}\mathbb{X}^{\top}\mathbb{Y}$ |
 | LASSO           | $\hat{\mathbb{Y}} = \mathbb{X} \theta$ | MSE           | L1             | $\frac{1}{n} \|\mathbb{Y}-\mathbb{X}\theta\|^2_2 + \lambda \sum_{i=1}^p \vert \theta_i \vert$ | No closed form                                                                                       |                                                                                   |
-
